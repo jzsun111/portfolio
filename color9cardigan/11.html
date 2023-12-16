@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>의류 상세페이지 포트폴리오</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+* {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+/* 스크롤 막기 CSS */
+.notScroll {overflow: hidden;width: 100%;height: 100vh;touch-action:none;}
+/* 팝업 CSS */
+
+body {
+	padding:20px;
+}
+
+.pop_wrap01 {display: none;position: fixed;top: 0;left: 0;width: 100%; height: 100vh;z-index: 3;}
+.pop_wrap01 .bg {position: fixed;top: 0;left: 0;width: 100%;height: 100vh;background: rgba(0,0,0,0.8);z-index: 1;}
+
+.pop_wrap02 {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100vh;z-index: 3;}
+.pop_wrap02 .bg {position: fixed;top: 0;left: 0;width: 100%;height: 100vh;background: rgba(0,0,0,0.8);z-index: 1;}
+
+.pop_wrap03 {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100vh;z-index: 3;}
+.pop_wrap03 .bg {position: fixed;top: 0;left: 0;width: 100%;height: 100vh;background: rgba(0,0,0,0.8);z-index: 1;}
+
+.pop_wrap04 {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100vh;z-index: 3;}
+.pop_wrap04 .bg {position: fixed;top: 0;left: 0;width: 100%;height: 100vh;background: rgba(0,0,0,0.8);z-index: 1;}
+
+.popup {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width:1000px;height:1000px;max-width:90vw;max-height: 90vh;background: #fff;z-index: 2;}
+.popup .close {position: absolute;top: 15px;right: 15px;width: 17px;height: 17px;}
+.popup .close img {width: 100%;height: 100%;}
+.popup .popup_con {max-width: 1000px; overflow: auto; /*padding:15px;*/width: 100%;height: 100%;font-size: 16px;line-height: 24px;color: #000;}
+
+.popup .popup_con  img {
+	max-width: 100% ;
+	width: expression(this.width > 800 ? 800: true) ;
+	height: auto ;
+}
+
+.topTd {
+	padding:7px;
+}
+
+.topTd p {
+	font-size:0.8rem;
+}
+</style>
+</head>
+<body>
+<div style="padding:10px;">
+	<h3>· 상세페이지 포트폴리오</h3>
+</div>
+
+<table align="center" style="width:100%;">
+<tr>
+	<td style="width:50%" valign="top" class="topTd">
+		<p>■ 나시가디건세트</p>
+		<a href="#" class="btn01"><img src="./img/0101_thumnail.png" style="width:100%; height:100%;" /></a>
+	</td>
+	<td style="width:50%" valign="top" class="topTd">
+		<p>■ 트레이닝세트</p>
+		<a href="#" class="btn02"><img src="./img/0102_thumnail.png" style="width:100%; height:100%;" /></a>
+	</td>
+</tr>
+<tr>
+	<td style="width:50%" valign="top" class="topTd">
+		<p>■ 몽블랑 울 숏자켓</p>
+		<a href="#" class="btn03"><img src="./img/0201_thumnail.png" style="width:100%; height:100%;" /></a>
+	</td>
+	<td style="width:50%" valign="top" class="topTd">
+		<p>■ 진주 미니 크로스가방</p>
+		<a href="#" class="btn04"><img src="./img/0301_thumnail.png" style="width:100%; height:100%;" /></a>
+	</td>
+</tr>
+</table>
+
+<div class="pop_wrap01">
+    <div class="bg"></div>
+    <div class="popup">
+        <a href="#" class="close"><img src="./img/close.png" alt="닫기" /></a>
+        <div class="popup_con">
+            <img src="./img/01/0101.jpg" />
+        </div>
+    </div>
+</div>
+
+<div class="pop_wrap02">
+    <div class="bg"></div>
+    <div class="popup">
+        <a href="#" class="close"><img src="./img/close.png" alt="닫기"></a>
+        <div class="popup_con">
+			<img src="./img/01/0102.jpg" />
+        </div>
+    </div>
+</div>
+
+<div class="pop_wrap03">
+    <div class="bg"></div>
+    <div class="popup">
+        <a href="#" class="close"><img src="./img/close.png" alt="닫기"></a>
+        <div class="popup_con">
+			<img src="./img/02/0201.jpg" />
+        </div>
+    </div>
+</div>
+
+<div class="pop_wrap04">
+    <div class="bg"></div>
+    <div class="popup">
+        <a href="#" class="close"><img src="./img/close.png" alt="닫기"></a>
+        <div class="popup_con">
+            <img src="./img/03/0301.jpg" />
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    popup();
+})
+
+function popup(){
+    //팝업 열기
+    $('.btn01').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap01').fadeIn(300);
+        $("body").addClass('notScroll');
+    });
+	
+    //팝업 닫기
+    $('.pop_wrap01 .bg, .pop_wrap01 .close').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap01').fadeOut(100);
+        $("body").removeClass('notScroll');
+    });
+	
+	$('.btn02').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap02').fadeIn(300);
+        $("body").addClass('notScroll');
+    });
+	
+    //팝업 닫기
+    $('.pop_wrap02 .bg, .pop_wrap02 .close').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap02').fadeOut(100);
+        $("body").removeClass('notScroll');
+    });
+	
+	$('.btn03').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap03').fadeIn(300);
+        $("body").addClass('notScroll');
+    });
+	
+    //팝업 닫기
+    $('.pop_wrap03 .bg, .pop_wrap03 .close').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap03').fadeOut(100);
+        $("body").removeClass('notScroll');
+    });
+	
+	$('.btn04').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap04').fadeIn(300);
+        $("body").addClass('notScroll');
+    });
+	
+    //팝업 닫기
+    $('.pop_wrap04 .bg, .pop_wrap04 .close').on('click',function(e){
+        e.preventDefault();
+        $('.pop_wrap04').fadeOut(100);
+        $("body").removeClass('notScroll');
+    });
+}
+</script>
+</body>
+</html>

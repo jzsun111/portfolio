@@ -1,0 +1,775 @@
+.main {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: 0% 0%;
+  animation-duration: 3s;
+  animation-name: gray5animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.mainn {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: 0% 0%;
+  animation-duration: 3s;
+  animation-name: gray5animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.ending11 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  animation-duration: 3s;
+  animation-name: gray6animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.ending12 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-duration: 3s;
+  animation-name: gray6animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.ending111 {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+@keyframes gray5animation {
+  from {
+    opacity: 0;
+  }
+  90% {
+    opacity: 100;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes gray6animation {
+  from {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 100;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
+.m2 {
+  width: 1000px;
+
+  object-fit: cover;
+  object-position: 0% 0%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+}
+.m1 {
+  width: 1000px;
+
+  object-fit: cover;
+  object-position: 0% 0%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+}
+
+.outline1 {
+  background-color: #d1b48c;
+  width: 100%;
+  height: 850px;
+  padding: 20px;
+  position: relative;
+}
+
+.font0 {
+  font-size: 110px;
+  color: #ae633a;
+  line-height: 70px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  font-family: litoland1;
+}
+.fontposition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.font1 {
+  color: #fff3d3;
+
+  font-size: 20px;
+  font-family: litoland1;
+}
+.main1 {
+  width: 30%;
+
+  margin-left: 50px;
+  margin-top: 60px;
+}
+.outline2 {
+  background-color: #e2ceb5;
+  width: 100%;
+  padding: 20px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.font2 {
+  padding-top: 100px;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: litoland1;
+}
+.font3 {
+  color: #b45e30;
+  font-size: 20px;
+}
+.font4 {
+  color: #fff6dc;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  font-size: 15px;
+}
+.font5 {
+  color: #fff6dc;
+  font-size: 15px;
+}
+@font-face {
+  font-family: litoland1;
+  src: url("font1/litoland1/Litoland_Italic.otf");
+}
+@font-face {
+  font-family: hymyeongjoextra;
+  src: url("font1/hymyeongjo_extra/korean_h2mjre.ttf");
+}
+
+.main0 {
+  display: flex;
+  padding-top: 80px;
+}
+.wear {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.body1 {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 1000px;
+}
+.font6 {
+  font-family: litoland1;
+  color: #fff6dc;
+  border: 1px dotted #fff6dc;
+
+  width: 130px;
+  height: 35px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font66 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.main22 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.main222 {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+}
+.main2 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 500px;
+  height: 400px;
+}
+.font789 {
+  border: 1px dotted #fff6dc;
+  width: 200px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 110px;
+  margin-left: 100px;
+}
+
+.font7 {
+  font-family: litoland1;
+  color: #b45e30;
+  font-size: 20px;
+}
+
+.font8,
+.font9 {
+  font-family: litoland1;
+  color: #fff6dc;
+  font-size: 13px;
+}
+
+.fontdetailcheck {
+  font-family: litoland1;
+  color: #be8b66;
+  font-size: 20px;
+  background-color: #d9bf9e;
+  border: 0px solid #d3ba9a;
+  width: 140px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 420px;
+  margin-bottom: 15px;
+}
+.weardown {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.wearup {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.wear {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 47%;
+  position: absolute;
+  top: -60px;
+  right: 40px;
+}
+.wear0 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.detail1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+
+  border-radius: 30px;
+  width: 100%;
+  height: 370px;
+}
+.detail0 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Coment {
+  font-family: litoland1;
+  color: #be8b66;
+  font-size: 20px;
+  background-color: #d9bf9e;
+  border: 0px solid #d9bf9e;
+  width: 115px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 430px;
+
+  margin-bottom: 15px;
+}
+.cm0 {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.coment0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  color: #000000;
+}
+
+.wearfont {
+  font-family: litoland1;
+  background-color: #d9bf9e;
+
+  color: #be8b66;
+  font-size: 20px;
+
+  border: 0px solid #d9bf9e;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 438px;
+
+  margin-bottom: 15px;
+}
+.lime {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.lime1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+  margin-right: 12px;
+}
+.black {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.black1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+}
+.lb {
+  display: flex;
+  padding-bottom: 10px;
+}
+.pink {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.white {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.pink1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+  margin-right: 12px;
+}
+.white1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+}
+.pw {
+  display: flex;
+  padding-bottom: 10px;
+}
+.gray {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.peach {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.gray1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+  margin-right: 12px;
+}
+.peach1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+}
+.gp {
+  display: flex;
+  padding-bottom: 10px;
+}
+.blue {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.orange {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.blue1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+  margin-right: 12px;
+}
+.orange1 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 50%;
+}
+.bo {
+  display: flex;
+}
+.fonthari {
+  color: #ae633a;
+  font-size: 40px;
+  font-family: litoland1;
+}
+.font2023 {
+  color: #fff6dc;
+  font-size: 15px;
+  font-family: litoland1;
+}
+.font9color {
+  color: #fff6dc;
+  font-size: 15px;
+  font-family: litoland1;
+}
+.everyday {
+  color: #fff6dc;
+  font-size: 15px;
+  font-family: litoland1;
+}
+.useful {
+  color: #fff6dc;
+  font-size: 15px;
+  font-family: litoland1;
+}
+.ewh {
+  color: #8bc09f;
+  font-size: 15px;
+  font-family: litoland1;
+}
+
+.fonthari0 {
+  border: 1px dotted #fff6dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  margin-top: 100px;
+  margin-left: 250px;
+  gap: 4px;
+}
+
+.endingcolor {
+  width: 1000px;
+  height: 1500px;
+  position: relative;
+}
+
+.bc {
+  color: black;
+
+  font-size: 20px;
+}
+.bc1 {
+  background-color: #ddc4a7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.label11 {
+  width: 60%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.aa1 {
+  min-width: 1000px;
+  object-fit: cover;
+  object-position: 0% 0%;
+  display: flex;
+  justify-content: center;
+}
+.color9 {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #d9bf9e;
+  height: 635px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.n {
+  position: absolute;
+
+  top: 0px;
+  display: flex;
+
+  width: 100%;
+  left: 0%;
+
+  object-fit: cover;
+  object-position: 0% 0%;
+  display: flex;
+  position: absolute;
+  transition: 1s all;
+}
+@keyframes cross {
+  from {
+    left: 0;
+  }
+  to {
+    left: -4000;
+  }
+}
+
+.lb1 {
+  background-color: #ddc4a7;
+  display: flex;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.label2 {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.label222 {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.lb1label222 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 25%;
+  height: 25%;
+}
+
+.gpp {
+  font-size: 20px;
+  color: black;
+}
+.gpp1 {
+  background-color: #ddc4a7;
+  display: flex;
+  width: 128px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.label33 {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.label333 {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+
+.gpp1label333 {
+  width: 15%;
+  height: 15%;
+
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+
+.bclbgp {
+  display: flex;
+  justify-content: space-between;
+  padding-top: -50px;
+}
+.label4 {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.label444 {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.bb {
+  font-size: 20px;
+  color: black;
+}
+.bb1 {
+  background-color: #ddc4a7;
+  display: flex;
+  width: 108px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.bb1label444 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 150px;
+}
+.label5 {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.label555 {
+  object-fit: cover;
+  object-position: 0% 0%;
+  width: 100%;
+}
+.wbb {
+  font-size: 20px;
+  color: black;
+}
+.wbb1 {
+  background-color: #ddc4a7;
+  display: flex;
+  width: 128px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.wbb1label555 {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+}
+.bbwb {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 160px;
+}
+.si {
+  background-color: white;
+}
+.minicolor {
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  position: absolute;
+
+  animation-name: slidein;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.minicolor1 {
+  min-width: 115px;
+  height: 200px;
+}
+.minicolor::-webkit-scrollbar {
+  display: none;
+}
+.minicolor111 {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  top: -110px;
+}
+@keyframes slidein {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -1000px;
+  }
+}
+.lime000 {
+  position: fixed;
+  display: none;
+  background-color: RGBA(0 0 0 / 40%);
+  top: 0px;
+  left: 0px;
+  padding: 50px;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+  max-width: 940px;
+}
+.lime00 {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  object-fit: cover;
+  object-position: 0% 0%;
+  max-width: 1000px;
+}
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  border: 5px solid #d9bf9e;
+}
+.button {
+  position: absolute;
+  top: 65px;
+  right: 170px;
+  z-index: 100;
+  border-radius: 6px;
+  border: 0px solid #d9bf9e;
+  color: #b9aa96;
+  width: 35px;
+  height: 25px;
+}
+.bcbc1 {
+  padding-left: 100px;
+}
+.lbblb1 {
+}
+.gpp1gpp {
+}
+.bb1bb {
+}
+.wbb1wbb {
+}
